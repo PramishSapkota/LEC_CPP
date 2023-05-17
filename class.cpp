@@ -11,13 +11,11 @@ class student{
 };  
 int main(){
     student student1;
-    void function(){
-        cout<<"Enter your name";
-    cin>>student1.name;
+     cout<<"Enter your name";
+     cin>>student1.name;
      cout<<"Enter your RollNo.";
-    cin>>student1.roll;
+     cin>>student1.roll;
      cout<<"Enter your age";
-    cin>>student1.age;
-    }
-    return 0;
-    } 
+     cin>>student1.age;
+ return 0;
+ } 
