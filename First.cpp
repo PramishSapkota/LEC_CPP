@@ -13,7 +13,7 @@ class room{
     }
 };
 int main(){
-    room lec
+    room lec;
     cout<<"Enter length";
     cin>>lec.length;
     cout<<"Enter breadth";
