@@ -9,7 +9,7 @@ class room{
         cout<<"Area is"<<a*b;
     }
     void calculateVolume(int a,int b, int c){
-        cout<<"Area is"<<a*b*c;
+        cout<<"Volume is"<<a*b*c;
     }
 };
 int main(){
@@ -20,7 +20,7 @@ int main(){
     cin>>lec.breadth;
     cout<<"Enter height";
     cin>>lec.height;
-    void calculateArea(lec.length,lec.breadth);
-    void calculateVolume(lec.length,lec.breadth,lec.height);
+    lec.calculateArea(lec.length,lec.breadth);
+    lec.calculateVolume(lec.length,lec.breadth,lec.height);
     return 0;
 }

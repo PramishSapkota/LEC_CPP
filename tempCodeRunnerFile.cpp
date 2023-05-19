@@ -1,1 +1,3 @@
-git add <https://github.com/PramishSapkota/LEC_CPP.git>
+double calculateArea(){
+ return length*breadth;
+}
