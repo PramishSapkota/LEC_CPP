@@ -6,7 +6,7 @@ class student{
     int roll;
     int age;
     void functions(string names){
-       cout<<"Your name is"<<names;
+       cout<<"Your name is "<<names;
     }
 };  
 int main(){ 
