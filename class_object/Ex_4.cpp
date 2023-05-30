@@ -1,4 +1,4 @@
-#include<iostream>
+#include<iostream>//program to define function outside class
 using namespace std;
 class student
 {
@@ -7,11 +7,11 @@ class student
         char name[20];
         char phone[10];
     public:
-        void getdata();
+        void getdata();//declaring function
         void showdata();
         
 };
-void student::getdata()
+void student::getdata()//function defn
 {
     cout<<"\nEnter Roll No: ";
     cin>>roll;

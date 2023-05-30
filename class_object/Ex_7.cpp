@@ -1,24 +1,16 @@
-//C++ OBJECTS AS DATA TYPES
-// ADDING TWO COMPLEX NUMBERS
-
-#include<iostream>
-using std::cin;
-using std::cout;
-
+#include<iostream>  //C++ OBJECTS AS DATA TYPES
+using namespace std;  // ADDING TWO COMPLEX NUMBERS
 class complex{
     float real;
     float img;
-
-    public:
+ public:
     void getdata()
     {
         cout<<"Enter the real part\n";
         cin>>real;
         cout<<"Enter the complex part\n";
         cin>>img;
-
     }
-
     void add(complex x,complex y)
     {
         real=x.real+y.real;
@@ -34,7 +26,9 @@ class complex{
 int main()
 {
     complex c1,c2,c3;
+    cout<<"1st Complex No.\n";
     c1.getdata();
+    cout<<"2nd Complex No.\n";
     c2.getdata();
     c1.showdata();
     cout<<"+";
