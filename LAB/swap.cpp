@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
-int swap(int &s, int &u){
+void swap(int &s, int &u){
     int t;
     cout<<"Initial values\nX="<<s<<" Y="<<u;
     t=s;
     s=u;
     u=t;
-    return 0;
+    //return 0;
 }
 int getnum(){
     int a;
