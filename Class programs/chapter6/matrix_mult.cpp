@@ -17,8 +17,9 @@ class matrix
             for ( i = 0; i <3; i++)
         {
             for (j = 0; j<3; j++)
-            { cout<<"\nEnter element"<<" "<<i<<j<<" ";
-              cin>>a[i][j];
+            { 
+                cout<<"\nEnter element"<<" "<<i<<j<<" ";
+                cin>>a[i][j];
             }
         }
     }
@@ -27,23 +28,21 @@ class matrix
         matrix temp;
         for (i = 0; i<3 ; i++)
         {
-            for (j= 0; j<3; i++)
+            for (j= 0; j<3; j++)
             {
             
-               for (k= 0;k<3;i++)
-               {
+               for (k= 0;k<3;k++)
+               
                 temp.a[i][j]=a[i][k]*X.a[k][j]+temp.a[i][j];
-               }
                
             }
-            
         }
       return temp;  
     }
     void showdata()
     {
-        for ( i = 0; i <3; i++)
-        {           cout<<"\n";
+        for ( i = 0; i<3; i++)
+        {     cout<<endl;
             for (j = 0; j<3; j++)
             {
             cout<<a[i][j]<<" ";
@@ -60,7 +59,8 @@ int main()
     matrix A,B,C;
     A.getdata();
     B.getdata();
-    //  C=A*B;
+    C=A*B;
+    cout<<"Multpilication of above matrices\n";
     C.showdata();
     return 0;
 }
