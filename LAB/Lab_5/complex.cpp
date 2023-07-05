@@ -8,28 +8,26 @@ class complex
     int imag;
 
   public:
- //  complex(){real=0;imag=0;}
+ 
    void get_img()
    {
       cout<<"Enter imaginary no. ";
       cin>>imag;
    }
-   // void showData()
-   // {
-   //    cout<<real<<"+"<<imag<<"i\n";
-   // }
-   friend void showOutside(complex);
+  
+    void showData();
 };
- void showOutside(complex c)
+ void complex::showData()
 {  
-   cout<<c.real<<"+"<<c.imag<<"i";
+   cout<<real<<"+"<<imag<<"i";
 }
 int main()
 {
    complex c1;
    c1.get_img();
-   // c1.real=8;
-   //c1.showData();
-   showOutside(c1);
+   // c1.real=8; doesnt work as our real variable has constant value
+   //constant has to be given at start of program else error occurs
+   c1.showData();
+  
  return 0;
 }
