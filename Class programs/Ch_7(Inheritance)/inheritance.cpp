@@ -23,7 +23,7 @@ class child:public Parent
 int main()
 {
     Parent p1;
-    //p1.id_protected=45; doesnt work as protected attributes cant be 
+    //p1.id_protected=45; //doesnt work as protected attributes cant be 
     //accesed by its own obj but by obj of derived class only
     child c1;
     c1.setId(2);
