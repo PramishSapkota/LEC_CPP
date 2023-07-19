@@ -21,7 +21,7 @@ class student
     
 
 };
-class test:public student//
+class test:public student
 {
     protected: float p,c,m;
  public:
