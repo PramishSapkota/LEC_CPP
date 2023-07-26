@@ -12,7 +12,7 @@ class base
 
 };
 class derived:public base{
-
+    void area();
 };
 
 
@@ -20,6 +20,7 @@ int main()
 {
     derived d1;
     base *s1=&d1;
-    *s1->display();
+    s1->display();
+    d1.display();
 return 0;
 }
