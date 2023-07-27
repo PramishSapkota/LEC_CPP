@@ -3,7 +3,7 @@
 using namespace std;
 
 class Stack {
-    protected:
+    private:
         int s[MAX];
         int top;
     public:
@@ -16,20 +16,21 @@ class Stack {
 
         void push(int x) {
             if(top==MAX-1){
-                // nameless object of type class FULL{}
-                throw FULL();
+                
+               throw FULL();// nameless object of type class FULL{}
             } else {
-                s[++top] = x;
+                s[++top] = x;//prefix bcz initially top is -1 and we increment
+                            //it to 0 and keep the value here
             }
         } 
 
         int pop() {
             if(top == -1) {
-                // nameless object of type class EMPTY()
-                throw EMPTY();
+                
+               throw EMPTY();// nameless object of type class EMPTY{}
             } else {
-                return s[top--];
-            }
+                return s[top--];//postfix bcz top is at max i.e 1 as arrays start from 0
+            }                   //so we throw the value 1st and decrement later 
         }
 };
 
@@ -39,21 +40,21 @@ int main() {
         s.push(11);
         cout<<"\n1st number pushed";
         
-        s.push(22);
+        s.push(12);
         cout<<"\n2nd number pushed";
         
-        // s.push(33);
-        // cout<<"\nNumber pushed";
+        // s.push(13);
+        // cout<<"\n3rd number pushed";
 
         cout<<"\nNumber Popped: "<<s.pop()<<endl;
         cout<<"Number Popped: "<<s.pop()<<endl;
         cout<<"Number Popped:"<<s.pop()<<endl;
     }
     catch(Stack::FULL) {
-        cout<<"\nException: Stack is Full"<<endl;
+        cout<<"\nStack size exceeded"<<endl;
     } 
     catch(Stack::EMPTY) {
-        cout<<"\nException: Stack is Empty"<<endl;
+        cout<<"The number couldn't be popped stack is empty"<<endl;
     }
     return 0;
 }
