@@ -1,17 +1,20 @@
+//Basic to class type conversion
 #include<iostream>
 using namespace std;
 
 class Time
 {
     int hrs, min;
-    public:
-        operator=(int);
-        void display();
+ public:
+    void operator=(int);
+ /*operator agadi return type narakda auta error auxa tara 
+ program chalxa but online compiler ma chaldena*/
+    void display();
 };
 
-Time::operator=(int t)
+void Time::operator=(int t)
 {
-    cout<<"\nBasic to class type conversion\n";
+    
     hrs= t/60;
     min= t%60;
 };
