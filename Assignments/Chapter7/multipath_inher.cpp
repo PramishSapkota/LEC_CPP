@@ -1,9 +1,7 @@
-//Page 308
-//Ambiguity prevention by use if vritual function
-//virtual  base class and derived class are created.Thus when object of mutli derived class(result) access getdata()
-// no error is seen which would have been error if virtual was not used. 
-
-
+/*Ambiguity prevention by use of virtual function
+virtual  base class and derived class are created.Thus when object of mutli derived class(result) access getdata()
+no error is seen which would have been error if virtual was not used. 
+Page 308*/
 
 #include<iostream>
 using namespace std;

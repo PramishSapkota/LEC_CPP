@@ -1,3 +1,6 @@
+/*Redefine operator overloading in derived classes
+Page 326
+*/
 #include<iostream>
 using namespace std;
 

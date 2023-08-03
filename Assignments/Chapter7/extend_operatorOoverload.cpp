@@ -1,9 +1,12 @@
+/*Extending operstor overloading in derived class
+Page 324
+*/
 #include<iostream>
 using namespace std;
 
 class complex{
     protected:
-        loat real,imag;
+        float real,imag;
     public:
         complex(){}
 

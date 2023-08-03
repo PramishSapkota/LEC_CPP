@@ -1,5 +1,5 @@
 // constructor invocation and data member initialisation
-// consinvodtmemini.cpp #include<iostream> using namespace std;
+// Page 320
 #include<iostream>
 using namespace std;
 class base

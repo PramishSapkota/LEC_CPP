@@ -1,5 +1,5 @@
-// destructor in single inheritance
-// des_in_sin_inheri.cpp
+// Destructor in single inheritance
+//Page 322
 
 #include <iostream>
 using namespace std;

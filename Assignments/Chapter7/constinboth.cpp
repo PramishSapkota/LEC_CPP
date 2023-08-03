@@ -1,6 +1,5 @@
-//consbothbs_dr.cpp
 //constructors in both base and derived class
-
+//Page 312
 #include<iostream>
 using namespace std;
 

@@ -1,5 +1,5 @@
-//constinbsonly.cpp
-//constructor in base class only
+//constructor in derived class only
+//Page 313
 #include<iostream>
 using namespace std;
 
@@ -8,13 +8,13 @@ class base
 public:
     base()
     {
-        cout<<"default constrictor from base class";
+        //body of base class
     }
 
 };
 class derived:public base
 {
-    //body of derived class
+    cout<<"default constrictor from derived class";
 };
 
 int main()

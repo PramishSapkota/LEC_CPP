@@ -1,3 +1,6 @@
+/*Ambiguity in Multiple Inheritance
+Page 330
+*/
 #include<iostream>
 using namespace std;
 

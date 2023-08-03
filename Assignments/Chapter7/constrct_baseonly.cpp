@@ -1,3 +1,5 @@
+//Constructor in base class only
+//Page 312
 #include<iostream>
 using namespace std;
 

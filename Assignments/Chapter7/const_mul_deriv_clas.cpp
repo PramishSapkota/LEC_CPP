@@ -1,5 +1,5 @@
-//cons mul_dev_cls.cpp
-//constructor in multiply derived class
+//constructor in multiple derived class
+//Page 317
 
 #include<iostream> 
 using namespace std;

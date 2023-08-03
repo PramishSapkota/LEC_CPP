@@ -1,6 +1,5 @@
-//pg 315 7.66
-//constructor in base and derived classes
-//without default constructor
+//Constructor in base and derived classes without default constructor
+//pg 315
 #include<iostream>
 using namespace std; 
 class base
