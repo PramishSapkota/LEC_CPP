@@ -24,6 +24,7 @@ int main() {
 
     s->area(); // Call the area() function using the base class pointer (polymorphism)
     t.area();
+    t.show();
     /*s->show(); doesnt work as show isnt defined on base class and the pointer mechanism 
   doent let us access derived class function although it has address of derived class obj*/
     return 0;
