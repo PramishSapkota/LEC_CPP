@@ -1,3 +1,5 @@
+//same as time but use copy constructor to convert user
+//given time in second into hr,min&sec
 #include<iostream>
 using namespace std;
 
@@ -13,18 +15,15 @@ class Time
         min=0;
         sec=0;
     }
-    Time(int second)
-    {
-        hr = second / 3600;          
-        min = (second % 3600) / 60;  
-        sec = second % 60;
+    Time(int second):hr(0),min(0),sec(second){}
+     
+     
+    Time(Time &t)//copy constructor which converts time in sec
+    {              //into hr,min&sec
+        hr = t.hr / 3600;          
+        min = (t.min % 3600) / 60;  
+        sec = t.sec % 60;
     }
-    /*Time(Time &t)//copy constructor defn which is 
-    {         //really not needed but I kept anyway
-        hr=t.hr;
-        min=t.min;
-        sec=t.sec;
-    }*/
     void showTime()
     {
         cout<<hr<<"hr"<<min<<"min"<<sec<<"sec";

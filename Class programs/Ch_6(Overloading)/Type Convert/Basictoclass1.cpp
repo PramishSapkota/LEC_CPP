@@ -1,4 +1,4 @@
-//Basic to class type conversion
+//Basic to class type conversion by operator overloading
 #include<iostream>
 using namespace std;
 

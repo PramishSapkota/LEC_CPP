@@ -11,6 +11,7 @@ class base
     int real,img;
 
  public:
+    //base() : real(0), img(0) {}//initialize like this or like below
     base(){
         real=0;
         img=0;

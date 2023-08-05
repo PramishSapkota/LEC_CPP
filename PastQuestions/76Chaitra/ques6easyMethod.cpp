@@ -1,6 +1,6 @@
 /*Program that conatains base class which ask the user to enter a complex no. and
 a derived class that adds complex no. of its own with base.Finally make a friend class
-of derived and calculate difference of base complex no. and its own complex no. */
+of derived and calculate difference of base complex no. and its own complex no.*/
 #include<iostream>
 using namespace std;
 
@@ -10,7 +10,7 @@ class base
  public:
     int real,img;
 
-
+    //base() : real(0), img(0) {}//initialize like this or like below
     base(){
         real=0;
         img=0;
