@@ -1,13 +1,16 @@
 #include<iostream>
 using namespace std;
 class sample{
-    friend float mean(sample obj1);///try->*friend*/ float mean(sample obj1);
-    float num1,num2;        //it will show error as private variables cant be accessed like so 
-    public:
-    void getdata(){
+    
+    float num1,num2;         
+ public:
+    friend float mean(sample obj1);///try->float mean(sample obj1);
+    void getdata(){                //it will show error as private variables cant be accessed like so
         float a,b;
-        cout<<"Input data "<<endl;
-        cin>>a>>b;
+        cout<<"Input 1st data: ";
+        cin>>a;
+        cout<<"Input 2nd data: ";
+        cin>>b;
         num1=a;
         num2=b;
     }
