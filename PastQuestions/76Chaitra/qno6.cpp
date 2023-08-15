@@ -1,4 +1,4 @@
-/*Program that conatains base class which ask the user to enter a complex no. and
+/*Program that contains base class which ask the user to enter a complex no. and
 a derived class that adds complex no. of its own with base.Finally make a friend class
 of derived and calculate difference of base complex no. and its own complex no.*/
 #include<iostream>

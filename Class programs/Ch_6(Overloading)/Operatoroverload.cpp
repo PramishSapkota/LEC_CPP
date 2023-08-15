@@ -22,10 +22,10 @@ class num{
 };
 int main(){
     num obj(1,-2,3);
-    cout<<"Values before calling/n";
+    cout<<"Values before calling";
     obj.show();
     -obj;
-    cout<<"Values after calling/n";
+    cout<<"\n\nValues after calling";
     obj.show();
     return 0;
 }
