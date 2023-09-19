@@ -6,7 +6,7 @@
 using namespace std;
 
 int main() {
-    // create file of fstream class
+    // create file(object) of fstream class
     fstream file;
 
     // opening file "createfile.txt" in out(write) mode
