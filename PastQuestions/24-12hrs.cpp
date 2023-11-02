@@ -38,11 +38,17 @@ class Time12{
         min=0;
         sec=0;
     }
-    Time12(int hr,int mn,int sc,char*p){
+    Time12(int hr,int mn,int sc,const char*p){
         hour=hr;
         min=mn;
         sec=sc;
-        if (strcmp(strupr(p),"PM")==0)
+/*if const wasnt used in char*p i.e in line 41 
+then it generates a small error but program gives 
+intended output also 
+if (strcmp(strupr(p),"PM")==0) 
+would be in line 51 "strupr" is for uppercase*/
+        
+        if (strcmp(p,"PM")==0)
             pm=1;
         else
             pm=0;
@@ -68,7 +74,7 @@ class Time12{
 
 int main()
 {
-    Time24 t24(22,27,35);
+    Time24 t24(2,27,35);
     Time12 t12;
     t12=t24;
     cout<<"\nGiven 24 hours Time:";
@@ -76,7 +82,7 @@ int main()
     cout<<"\nEquivalent 12 hours time:";
     t12.display();
     
-    Time12 tt12(9,57,36,"PM");
+    Time12 tt12(9,57,36,"AM");
     Time24 tt24;
     cout<<"\n\nGiven 12 hours Time:";
     tt12.display();

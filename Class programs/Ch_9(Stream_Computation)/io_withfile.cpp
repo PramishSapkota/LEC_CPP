@@ -19,7 +19,7 @@ int main () {
 
    cout << "Writing to the file" << endl;
    cout << "Enter your name: "; 
-   cin.getline(data, 100);
+   cin>>data;
 
    // write inputted data into the file.
    outfile << data << endl;
